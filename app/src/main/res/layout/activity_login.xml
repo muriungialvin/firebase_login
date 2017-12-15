@@ -23,7 +23,8 @@
     </android.support.design.widget.AppBarLayout>
 
     <include layout="@layout/content_login"
-        android:layout_height="503dp" />
+        android:layout_height="503dp"
+        tools:ignore="IncludeLayoutParam" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

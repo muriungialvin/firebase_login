@@ -11,4 +11,9 @@
     <string name="pass">Password</string>
     <string name="login">Login</string>
     <string name="create">Create an Account</string>
+    <string name="title_activity_relative">relative</string>
+    <string name="title_activity_homeactivity">homeactivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 </resources>

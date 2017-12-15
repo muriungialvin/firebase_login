@@ -10,12 +10,12 @@
     >
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/user"
-        android:inputType="text"
-        android:hint="@string/username"
+        android:drawableLeft="@drawable/ic_email_icon"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email"
         />
     <EditText
         android:id="@+id/password"
@@ -38,12 +38,13 @@
         android:text="Dont have an account? Signup."
         />
     <Button
+        android:id="@+id/signup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/create"
         android:background="@color/colorPrimaryDark"
-        android:onClick="create_account"
         />
+
 
 
 </LinearLayout>

@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "286964357204",
+    "firebase_url": "https://blahbalh-7e51d.firebaseio.com",
+    "project_id": "blahbalh-7e51d",
+    "storage_bucket": "blahbalh-7e51d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286964357204:android:394fbbd567bae3cf",
+        "android_client_info": {
+          "package_name": "com.example.muriu.login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "286964357204-um14ettji2pohvtc4f1877t0btt157bg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.muriu.login",
+            "certificate_hash": "3239d5ca7bd3aa482f9532d7cda1737c89f41edb"
+          }
+        },
+        {
+          "client_id": "286964357204-m3mcth82kvm43hcu0l1p7eo7obb87qkb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.muriu.login",
+            "certificate_hash": "c57a53658138b147cc3359187e6de29f352de843"
+          }
+        },
+        {
+          "client_id": "286964357204-jc5t1s47grbmuldsqtnaofuijtfags1i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCTuZNOf66oCGwmgUodaxLTnBgGuOxY44"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "286964357204-jc5t1s47grbmuldsqtnaofuijtfags1i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
