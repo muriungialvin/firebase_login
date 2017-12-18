@@ -1,12 +1,15 @@
 package com.example.muriu.login;
 
+
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -14,8 +17,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.google.firebase.auth.FirebaseAuth;
+
+import layout.fragment_activity;
+import layout.importfragment;
+
 
 public class homeactivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -86,11 +94,12 @@ public class homeactivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        Fragment fragment = null;
 
         if (id == R.id.nav_camera) {
-            // Handle the camera action
+            fragment = new importfragment();
         } else if (id == R.id.nav_gallery) {
-
+            fragment = new fragment_activity();
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
@@ -102,9 +111,18 @@ public class homeactivity extends AppCompatActivity
                 //progressDialog.setMessage("Logging out...");
                 //progressDialog.show();
                 firebaseAuth.signOut();
-                Intent homeActivity=new Intent(homeactivity.this, Login.class);
-                startActivity(homeActivity);
+                Intent loginActivity=new Intent(homeactivity.this, Login.class);
+                startActivity(loginActivity);
                 //To finish your current acivity
+
+        }
+
+        if(fragment != null){
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_place, fragment);
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
 
         }
 
