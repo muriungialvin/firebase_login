@@ -21,6 +21,7 @@ import android.view.View;
 
 import com.google.firebase.auth.FirebaseAuth;
 
+import layout.MainActivity;
 import layout.fragment_activity;
 import layout.importfragment;
 
@@ -103,7 +104,7 @@ public class homeactivity extends AppCompatActivity
         } else if (id == R.id.nav_gallery) {
             fragment = new fragment_activity();
         } else if (id == R.id.nav_slideshow) {
-
+            fragment = new MainActivity();
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
