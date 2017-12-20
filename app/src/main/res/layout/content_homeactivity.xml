@@ -15,7 +15,8 @@
         android:id="@+id/fragment_place"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
+        >
 
-        />
+    </fragment>
 
 </RelativeLayout>
